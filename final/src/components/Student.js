@@ -18,8 +18,12 @@ const Student = () => {
         <div>
             学生一覧：[{studentsList.join(', ')}] <br/>
             削除する名前を入力してください。<br />
-            <input type='text' value={name} onChange={handleChange}/> <br/>
-            <button onClick={handleDelete}>確定</button><br/>
+            <input  type='text' 
+                    value={name} 
+                    onChange={handleChange}/> <br/>
+            <button onClick={handleDelete}
+                    className='button'
+            >確定</button><br/>
             削除する名前: {name} <br/>
             新しいー覧：[{students.join(', ')}]
         </div>
